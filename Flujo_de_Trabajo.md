@@ -52,16 +52,25 @@
 - El sistema se desarrollará siguiendo el patrón de diseño **Modelo Vista Controlador (MVC)**, lo que permitirá una clara separación de responsabilidades entre la lógica de negocio, la interfaz de usuario y el control del flujo de la aplicación.
 
 ## Estructura del Repositorio
-El repositorio contará con las siguientes **4 ramas** principales:
+
+El repositorio principal (`app_poliacciones`) cuenta con **dos ramas principales** y utiliza **submódulos** para integrar los componentes del **frontend** y el **backend**.
 
 1. **main**  
-   Contendrá el código principal de la aplicación. Esta rama será la base de desarrollo estable y se utilizará para desplegar las versiones finales.
+   - Contiene los submódulos que apuntan al código fuente del **backend** (`poliacciones_backend`) y del **frontend** (`poliacciones_front`).
+   - Es la rama principal para la integración de ambos componentes y para la entrega de la aplicación en producción.
 
-2. **frontend**  
-   Albergara el diseño de la aplicación. Todos los archivos relacionados con el diseño y la interfaz de usuario se encontrarán en esta rama.
+2. **docs**  
+   - Contiene los submódulos del **backend** y **frontend**, junto con toda la documentación del proyecto.
+   - Aquí se almacenan archivos como:
+     - Historias de usuario.
+     - Diagramas UML (diagrama de clases, modelo entidad-relación, etc.).
+     - Documentación técnica (estándares de codificación, mejores prácticas, etc.).
 
-3. **backend**  
-   Contendrá toda la lógica de negocio y los componentes relacionados con el backend. Aquí se desarrollarán las funcionalidades del servidor y la integración con la base de datos.
+#### Uso de Submódulos
 
-4. **docs**  
-   En esta rama se almacenarán todos los documentos generados durante el desarrollo, incluyendo las historias de usuario, diagramas UML, documentación técnica, y cualquier otro archivo relacionado con la gestión del proyecto.
+El repositorio utiliza submódulos para integrar los repositorios independientes del **backend** y el **frontend**. Esto permite una gestión modular del proyecto, facilitando la colaboración y la separación de responsabilidades.
+
+---
+
+
+
