@@ -1,6 +1,5 @@
 [submodule "poliacciones_backend"]
 	path = poliacciones_backend
 	url = https://github.com/JotaValla/poliacciones_backend
-[submodule "poliacciones_front"]
 	path = poliacciones_front
 	url = https://github.com/JotaValla/poliacciones_front
