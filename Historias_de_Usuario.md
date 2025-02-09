@@ -111,3 +111,94 @@
 1. Implementar la lógica para calcular la ganancia cuando el valor actual de las acciones es mayor que el valor de compra.
 2. Implementar la lógica para calcular la pérdida cuando el valor actual de las acciones es menor que el valor de compra.
 3. Crear una interfaz para mostrar el porcentaje de ganancia o pérdida, la ganancia y la perdida al usuario.
+
+
+# Historia de Usuario 4: Ordenamiento de Acciones
+
+**Como** usuario,  
+**quiero** ordenar por nombre mis acciones de forma ascendente,  
+**para** visualizar mis inversiones en orden alfabético y facilitar su búsqueda.
+
+## Criterios de Aceptación
+
+### **Escenario 1: Ordenar Acciones Ascendentemente**
+**Dado** que el usuario visualiza la lista de acciones,  
+**Cuando** haga clic en el botón de ordenamiento,  
+**Entonces** el sistema debe reordenar la lista de acciones de forma ascendente (alfabéticamente por el nombre).
+
+
+## Tareas
+
+1. Desarrollar la función en el backend que ordene las acciones de forma ascendente.
+2. Integrar el botón de ordenamiento en la interfaz de usuario.
+
+---
+
+# Historia de Usuario 5: Consolidación de Acciones
+
+**Como** usuario,  
+**quiero** ver un consolidado de mis acciones que incluya el porcentaje de ganancia o pérdida de cada acción,  
+**para** evaluar de forma global el rendimiento de mis inversiones.
+
+## Criterios de Aceptación
+
+### **Escenario 1: Mostrar Consolidado de Acciones**
+**Dado** que el usuario ha registrado múltiples acciones,  
+**Cuando** consulte la sección de consolidado,  
+**Entonces** el sistema debe agrupar las acciones similares y mostrar el porcentaje de ganancia o pérdida para cada grupo.
+
+## Tareas
+
+1. Implementar la lógica para agrupar acciones duplicadas y calcular el porcentaje de ganancia o pérdida.
+2. Crear un DTO para facilitar el envío de la información consolidada al frontend.
+3. Diseñar la interfaz para mostrar el consolidado de acciones de manera clara y ordenada.
+
+---
+
+# Historia de Usuario 6: Inicio de Sesión y Registro con Token Seguro
+
+**Como** usuario,  
+**quiero** iniciar sesión y registrarme de forma segura,  
+**para** mantener mi sesión activa en la página  sin tener que reingresar mis credenciales continuamente.
+
+## Criterios de Aceptación
+
+### **Escenario 1: Registro y Generación de Token**
+**Dado** que un usuario se registra en la plataforma,  
+**Cuando** complete el proceso de registro,  
+**Entonces** el sistema debe generar un token seguro y enviarlo al cliente para iniciar la sesión.
+
+### **Escenario 2: Inicio de Sesión y Mantenimiento de Sesión**
+**Dado** que el usuario inicia sesión correctamente,  
+**Cuando** se autentique,  
+**Entonces** el sistema debe enviar el token en el encabezado de las solicitudes, manteniendo la sesión activa y segura.
+
+## Tareas
+
+1. Crear la vista de login y registro en el frontend.
+2. Implementar la lógica de autenticación en el backend utilizando JWT.
+3. Configurar el almacenamiento y validación del token en la aplicación cliente.
+
+---
+
+# Historia de Usuario 7: Paginación para el Registro de Acciones Compradas
+
+**Como** usuario,  
+**quiero** visualizar mis acciones compradas en páginas,  
+**para** navegar de manera eficiente a través de un gran volumen de registros.
+
+## Criterios de Aceptación
+
+### **Escenario 1: Visualización de la Paginación**
+**Dado** que el usuario tiene numerosas acciones compradas,  
+**Cuando** revise los registros de las acciones compradas,  
+**Entonces** el sistema debe mostrar un menú de páginas, limitando la cantidad de registros mostrados por página.
+
+### **Escenario 2: Navegación Entre Páginas**
+**Dado** que existen múltiples páginas de registros,  
+**Cuando** el usuario seleccione una página específica,  
+**Entonces** los registros de acciones deben actualizarse para mostrar únicamente los registros correspondientes a esa página.
+
+## Tareas
+1. Implementar la lógica de paginación en el backend, limitando el número de registros por página.
+2. Diseñar e integrar el menú de páginas en la interfaz de usuario.
