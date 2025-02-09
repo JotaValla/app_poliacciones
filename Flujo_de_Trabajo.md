@@ -22,6 +22,14 @@
       - Actualizar los documentos necesarios.
       - Cambios Requeridos
       - Analisis del impacto de las solicitudes de cambio.
+   ### Jimmy Valladares y Alexander Morales
+   - Seran los responsables de realisas las solicitudes de cambio
+     - Jimmy Valladares:
+                       - Inicio de sesión y registro con token seguro
+                       - Ordenamiento de acciones
+     - Alexander Morales:
+                       - Consolidación de acciones
+                       - Paginación para el registro de acciones compradas 
 
 ## Herramientas y Tecnologías
 
