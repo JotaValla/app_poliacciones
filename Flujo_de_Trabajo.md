@@ -16,6 +16,12 @@
   - Documentación técnica de estándares de codificación y mejores prácticas.
 
 ---
+###Version 2:
+   ### Santiago Torres y Paola Gamboa
+   - Serán los responsables de la documentación del proyecto, que incluirá:
+      - Actualizar los documentos necesarios.
+      - Cambios Requeridos
+      - Analisis del impacto de las solicitudes de cambio.
 
 ## Herramientas y Tecnologías
 
