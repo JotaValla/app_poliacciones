@@ -16,7 +16,7 @@
   - Documentación técnica de estándares de codificación y mejores prácticas.
 
 ---
-###Version 2:
+### Version 2:
    ### Santiago Torres y Paola Gamboa
    - Serán los responsables de la documentación del proyecto, que incluirá:
       - Actualizar los documentos necesarios.
@@ -28,6 +28,10 @@
 ### Backend:
 - **Lenguaje de Programación**: Java.
 - **Framework**: Spring Boot.
+- **Spring Security**: Para la integración de filtros de seguridad, configuración de accesos (SecurityConfig) y protección de endpoints.
+- **JWT (JSON Web Token)**: Se utilizará para la autenticación y autorización, garantizando sesiones seguras a través de tokens.
+- **Spring Data**: Se usará la interfaz `Page` para gestionar respuestas paginadas, en lugar de devolver listas completas, mejorando la eficiencia en el manejo de grandes volúmenes de datos.
+- **DTO (Data Transfer Object)**: Se implementarán para facilitar la transferencia eficiente de datos entre el backend y el frontend, especialmente en la consolidación de acciones.
 
 ### Dependencias:
 - **spring-boot-starter-data-jpa**: Para la gestión de datos.
@@ -77,6 +81,16 @@ El repositorio principal (`app_poliacciones`) cuenta con **dos ramas principales
 El repositorio utiliza submódulos para integrar los repositorios independientes del **backend** y el **frontend**. Esto permite una gestión modular del proyecto, facilitando la colaboración y la separación de responsabilidades.
 
 ---
+## Actualizaciones Clave del Proyecto
+
+- **JWT y Filtros de Seguridad:**  
+  Se ha integrado el uso de JWT para la autenticación, permitiendo que el token se envíe en el encabezado de las solicitudes. Además, se ha implementado un filtro de seguridad junto con una clase `SecurityConfig` para controlar y restringir el acceso a los endpoints de la aplicación.
+
+- **Paginación con Page en vez de List:**  
+  En el backend, se utiliza la interfaz `Page` de Spring Data para devolver resultados paginados, en lugar de listas completas. Esto mejora el rendimiento y la experiencia del usuario al manejar grandes volúmenes de datos.
+
+- **Uso de DTOs:**  
+  Se han implementado Data Transfer Objects (DTO) para la consolidación de acciones y otros procesos de transferencia de datos, asegurando una comunicación eficiente y estructurada entre el backend y el frontend.
 
 
 
